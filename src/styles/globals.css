@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Imbue", "san-serif";
+  letter-spacing: 0.5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Light Mode */
+:root {
+  --text-color: #124a63;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #f9f9f9;
+  --background-color-dark: #eef3f6;
+  --background-color-light: white;
+
+  --font-family: "Poppins", sans-serif;
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --text-color: #f0f0f0;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #252329;
+  --background-color-dark: #3c393f;
+  --background-color-light: #120f13;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  letter-spacing: 1px;
+}
+
+.react-toggle-track-check {
+  left: 4px !important;
+}
+
+.react-toggle-track-x {
+  top: -2px !important;
+  right: 12px !important;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: var(--text-color-secondary) !important;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  left: 27px;
+  border-color: white !important;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  box-shadow: 0px 0px 0px 0px #fff !important;
+}
+
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+  box-shadow: 0px 0px 0px 0px #fff !important;
+}

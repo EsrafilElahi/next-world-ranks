@@ -1,0 +1,115 @@
+.detail_container {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  background-color: var(--background-color);
+}
+
+.detail_flag {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-light);
+  box-shadow: var(--box-shadow);
+  padding: 20px 20px 1px 20px;
+  border-radius: 8px;
+}
+
+.detail_flag img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.detail_flag_title {
+  text-align: center;
+}
+
+.detail_flag_title h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.detail_flag_title p {
+  color: var(--text-color-secondary);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.detail_detail {
+  margin-top: 40px;
+  background-color: var(--background-color-light);
+  box-shadow: var(--box-shadow);
+}
+
+.detail_capital,
+.detail_language,
+.detail_population,
+.detail_area,
+.detail_native_name,
+.detail_currency {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail_label {
+  color: var(--text-color-secondary);
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+  .detail_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  .detail_flag {
+    flex: 1;
+    margin-right: 17px;
+    display: flex;
+    align-items: center;
+  }
+  .detail_detail {
+    flex: 1;
+    margin-left: 17px;
+  }
+  .detail_flag img {
+    height: 14rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .detail_container {
+    padding-top: 50px;
+  }
+  .detail_flag {
+    flex: 1.5;
+    margin-right: 17px;
+  }
+  .detail_detail {
+    flex: 2;
+    margin-left: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .detail_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .detail_flag {
+    flex: 1.5;
+    margin-right: 17px;
+  }
+  .detail_detail {
+    flex: 2;
+    margin-left: 17px;
+  }
+  .detail_flag img {
+    height: 14rem;
+  }
+}

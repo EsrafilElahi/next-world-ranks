@@ -7,7 +7,7 @@ function Layout({ children, title = 'World Ranks' }) {
         <div className={styles.layout_container}>
 
             <header className={styles.layout_header}>
-                <Link href="/">
+                <Link href="/" passHref>
                     <svg
                         width="175"
                         height="24"

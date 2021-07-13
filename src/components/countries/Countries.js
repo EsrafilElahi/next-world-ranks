@@ -76,10 +76,10 @@ function Countries({ data }) {
                 </div>
                 {
                     orderedData.map(country => (
-                        <Link href={`/country/${country.alpha3Code}`} key={country.name}>
+                        <Link passHref href={`/country/${country.alpha3Code}`} key={country.name}>
                             <div className={styles.row_header}>
                                 <div className={styles.row_flag}>
-                                    <img src={country.flag} />
+                                    <img src={country.flag} alt={country.name} />
                                 </div>
                                 <div className={styles.row_name}>{country.name}</div>
                                 <div className={styles.row_population}>{country.population}</div>

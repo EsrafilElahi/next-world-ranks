@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Head from 'next/head'
 import Layout from './../../components/layout/Layout';
 import styles from './Country.module.css'
@@ -29,7 +28,6 @@ export const getStaticProps = async (context) => {
 }
 
 
-
 function Country({ country }) {
 
     return (
@@ -43,7 +41,7 @@ function Country({ country }) {
 
                     <div className={styles.detail_flag}>
                         <div className={styles.detail_flag_img}>
-                            <img src={country.flag} />
+                            <img src={country.flag} alt={country.name} />
                         </div>
                         <div className={styles.detail_flag_title}>
                             <h1>{country.name}</h1>

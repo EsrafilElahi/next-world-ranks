@@ -33,10 +33,12 @@ function Country({ country }) {
     return (
         <>
             <Layout>
+                
                 <Head>
                     <title>{country.name}</title>
                     <link rel="icon" href={country.flag} />
                 </Head>
+
                 <div className={styles.detail_container}>
 
                     <div className={styles.detail_flag}>

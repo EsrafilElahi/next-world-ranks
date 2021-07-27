@@ -14,29 +14,9 @@
 .layout_footer {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   font-size: 17px;
   padding: 30px 0;
   margin-top: -10px;
 }
 
-/* Media Query */
-@media screen and (min-width: 768px) {
-  .layout_footer {
-    margin-top: 5px;
-  }
-  .main {
-    height: 90vh;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .main {
-    height: 83vh;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main{
-    height: 80vh;
-  }
-}

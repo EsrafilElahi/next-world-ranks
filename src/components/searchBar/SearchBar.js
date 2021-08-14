@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styles from './SearchBar.module.css'
 import Toggle from 'react-toggle'
 import "react-toggle/style.css"

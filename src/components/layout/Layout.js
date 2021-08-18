@@ -34,7 +34,6 @@ function Layout({ children, title = 'World Ranks' }) {
                         <rect y="4" width="7.33333" height="4.4" rx="2" fill="#21B6B7" />
                     </svg>
                 </Link>
-
             </header>
 
             <main className={styles.main}>{children}</main>

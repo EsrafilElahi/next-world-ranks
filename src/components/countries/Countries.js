@@ -16,12 +16,7 @@ const orderData = (data, value, direction) => {
 }
 
 const Arrow = ({ direction }) => {
-    if (!direction) {
-        return (
-            <>
-            </>
-        )
-    }
+    if (!direction) return;
     else if (direction === 'asc') {
         return (
             <div className={styles.arrow}>

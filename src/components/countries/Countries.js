@@ -71,7 +71,7 @@ function Countries({ data }) {
                     </button>
                     <button onClick={() => setDirectionAndValue('area')} className={styles.country_area}>
                         <div>Area(km<sup style={{ fontSize: '.5rem' }}>2</sup>)</div>
-                        {value === 'area' ? <Arrow direction={direction} /> : null}
+                        {value === 'area' && <Arrow direction={direction} />}
                     </button>
                 </div>
                 {
